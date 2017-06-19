@@ -7,7 +7,8 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+  all_groceries = groceries.flatten(2)
+  all_groceries.delete_if do |item|
+    item.class == Symbol
+  end
 end
